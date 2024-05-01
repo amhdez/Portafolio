@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Raleway:wght@100;200&family=Zilla+Slab:wght@300&display=swap');
+/* Indica que se seleccionaron todos los elementos del Index*/
+*{
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Zilla Slab', serif;   
+  font-size: 15px;
+}
+
+.header-container {
+  width: 900px;
+  margin: 0 auto;
+  font-size: 24PX;
+  background-color: rgb(223, 227, 229);
+  color: honeydew;
+}
+
+.header-logo-img {
+  border-radius: 60%;
+  margin: 20px;
+  overflow: hidden;
+  height: 55px;
+  /* Ocultar el contenido que sobresale */
+}
+
+.brand .subtitulo-1 span{
+  color: #1B365C;
+}
+
+.inf-content span{
+  color: cadetblue;
+}
+main {
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: rgb(223, 227, 229);
+  color: #1B365C;
+}
+
+.navbar {
+  /* crea una caja de navegacion en filas o columnas*/ 
+  display:flex ;
+  align-items: center;
+  font-size: 15px;
+  background-color: rgb(70, 136, 130);
+  width: 900px;
+  justify-content: space-between;
+  top: 0 ;
+  z-index: 1000;
+  position: fixed;
+}
+
+h1 {
+  font-size: clamp (4vw,1.5em,3em);
+}
+h2, h3, h4 {
+  margin-top: 15px;
+}
+h4 {
+  font-size: 20px;
+}
+.subtitulo-1 {
+  justify-content: right;
+  font-size: 35px;
+  color: white;
+}
+
+.subtitulos-2 {
+  text-align: center;
+}
+
+.contenido {
+  margin: 15px;
+  text-align: justify;
+ }
+
+.p-1 {
+  text-align: center;
+  margin: 20px;
+}
+.about {
+  margin: 40px;
+}
+
+.titulo-2{
+  margin: 40px;
+}
+.header-logo-img {
+  justify-content: right;
+}
+
+.menu {
+  justify-content: stretch;
+}
+.menu li{
+  margin: 0 auto;
+  list-style: none; 
+  /* Sirve para eliminar viñetas de la lista*/
+}
+.menu ul li {
+  display: inline;
+}
+.menu a{
+  text-decoration: none;  /* Sirve para eliminar Subrayado del link*/
+  padding: 10px 20px;
+  color: honeydew;
+}
+
+.menu li a:hover {
+  background-color: rgb(132, 172, 182);
+}
+
+.download-cv {
+       padding: 8px 20px;
+       border-radius: 15px;
+       margin-top: 10px;
+       background-color:rgb(51, 91, 116);
+       color: black;
+       font-size: 15px;
+       border: none;
+       cursor: pointer;
+       font-family: 'Raleway', sans-serif;
+       text-decoration-style: solid;
+}
+.download-cv:hover {
+  background-color: rgb(132, 172, 182);
+}
+h4 {
+  text-align: left
+}
+
+.container-contact {
+  background-color: rgb(162, 194, 214);
+  color: black;
+}
+
+
+
+.container-asp-f {
+  margin: 15px;
+  list-style: none;
+  text-align: left;
+}
+
+.contact-section {
+margin: 20px;
+}
+
+.form-group {
+  justify-content: space-around;
+}
+
+.form-contacto {
+  color: #1B365C;
+}
+
+.formulario-superpuesto {
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  width: 250px; 
+  transition: all 0.3s ease-in-out;
+  justify-content: left;
+  text-align: left;
+}
+
+.formulario-superpuesto form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-superpuesto label,
+.formulario-superpuesto input,
+.formulario-superpuesto textarea,
+.formulario-superpuesto button {
+  margin-bottom: 10px;
+}
+
+.form-superpuesto {
+  margin: 5px;
+}
+
+.formulario-superpuesto-2 .contact-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(188, 196, 200);
+  border: 1px;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.formulario-superpuesto-2 .contact-form label {
+  color: #1B365C;
+  margin: 0;
+}
+
+.formulario-superpuesto-2 .contact-form button[type="submit"] {
+  background-color: rgb(51, 91, 116) ;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.formulario-superpuesto-2 .contact-form textarea {
+  background-color:rgb(188, 196, 200);
+  font-family: 'Nanum Myeongjo', serif;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px; 
+}
+
+.form-contacto {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+footer {
+  color:rgb(170, 104, 140);
+  width: 900px;
+  text-align: justify;
+  margin: 0 auto;
+  background-image: url('IMAGENES/Fondo-footer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sotial-networks {
+  margin-left: 20px;
+  display: flex;
+  justify-content:center ;
+
+}
+.sotial-networks i {
+  margin-right: 10px;
+}
+
+.container-cont a {
+  display: inline;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  color: #1B365C;
+  margin-right: 10px;
+  padding: 5px 20px 5px 10px ;
+  border-radius: 10px;
+}
+
+.container-cont i a:hover  {
+  background-color: rgb(132, 172, 182);
+}
+
+.container-introduccion{
+  margin-top: 40px;
+}
+
+.container-perfil .item-perfil img {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.container-perfil {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+.item-perfil {
+  background-color: rgba(0, 128, 128, 0.544);
+  border-radius: 20px;
+  text-align:center ;
+  transition: all 0.5s;
+  width: 200px;
+  height: 250px;
+}
+
+.item-perfil:hover {
+  flex: 1 1 450px;
+  background-color: rgba(159, 29, 90, 0.621);
+}
+
+.item-perfil h3 {
+  text-align: center;
+  margin: 5px;
+}
