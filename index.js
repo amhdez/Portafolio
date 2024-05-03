@@ -23,17 +23,20 @@ conexion.connect(function(error){
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
+app.use(express.static('public'))
+
 app.get("/", (req, res) =>{
     res.sendFile(path.join(__dirname,"index.html"));
 });
 app.post('/validar', function(req, res){
+    console.log('Listo');
     const datos = req.body;
 
   let nombre = datos.nombre;
   let email = datos.email;
   let mensaje = datos.mensaje;
 
-  let buscar = "SELECT * FROM contacto WHERE correo = ?";
+  let buscar = "SELECT * FROM contacto WHERE email = ?";
   conexion.query(buscar, [email], function(error, rows){
     if(error){
         console.error("Error al buscar contacto:", error);
