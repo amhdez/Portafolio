@@ -129,10 +129,12 @@ h4 {
        cursor: pointer;
        font-family: 'Raleway', sans-serif;
        text-decoration-style: solid;
+       text-decoration: none;
 }
 .download-cv:hover {
   background-color: rgb(132, 172, 182);
 }
+
 h4 {
   text-align: left
 }
@@ -207,7 +209,7 @@ margin: 20px;
 
 .formulario-superpuesto-2 .contact-form button[type="submit"] {
   background-color: rgb(51, 91, 116) ;
-  color: white;
+  color: black;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -215,8 +217,11 @@ margin: 20px;
   text-transform: uppercase;
   margin-top: 10px;
   padding: 15px;
+  font-family: 'Courier New', Courier, monospace;
 }
-
+.formulario-superpuesto-2 .contact-form button[type="submit"]:hover {
+  background-color: rgb(132, 172, 182);
+}
 .formulario-superpuesto-2 .contact-form textarea {
   background-color:rgb(188, 196, 200);
   font-family: 'Nanum Myeongjo', serif;
@@ -247,13 +252,13 @@ footer {
 
 }
 .sotial-networks i {
-  margin-right: 10px;
+  margin-right: 3%;
 }
 
 .container-cont a {
   display: inline;
   text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Courier New', Courier, monospace;
   color: #1B365C;
   margin-right: 10px;
   padding: 5px 20px 5px 10px ;
@@ -284,7 +289,7 @@ footer {
   text-align:center ;
   transition: all 0.5s;
   width: 200px;
-  height: 250px;
+  height: 600px;
 }
 
 .item-perfil:hover {
@@ -295,4 +300,81 @@ footer {
 .item-perfil h3 {
   text-align: center;
   margin: 5px;
+}
+.avatar {
+  height: 300px;
+  width: 300px;
+}
+
+.list-experience li {
+  list-style: none;
+}
+div h3 {
+  font-size: 2.1rem;
+}
+
+@media (max-width: 923px) {
+  .formulario-superpuesto {
+    position: relative;
+    top: initial;
+    right: initial;
+    width: 100%;
+    text-align: center;
+    padding: 130px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .header-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 565px) {
+  .formulario-superpuesto {
+    padding: 5px;
+  }
+
+  .navbar {
+    display: initial;
+  }
+
+  main {
+    margin-top: 130px;
+  }
+
+  .header-logo-img {
+    width: 30%;
+    float: left;
+  }
+
+  .brand {
+    width: 50%;
+    float: right;
+    margin-right: 15px;
+  }
+
+  .menu {
+    float: left;
+    width: 100%;
+    height: 30px;
+  }
+
+  .perfil {
+    overflow-x: auto;
+  }
+
+  .inf-content {
+    padding-top: 15px;
+  }
 }

@@ -62,6 +62,14 @@ app.post('/validar', function(req, res){
   });
 });
 
+app.get("/quien_soy", (req, res) =>{
+    res.sendFile(path.join(__dirname,"quien_soy.html"));
+});
+
+app.get("/portafolio", (req, res) =>{
+    res.sendFile(path.join(__dirname,"portafolio.html"));
+});
+
 app.listen(PORT, () => {
     console.log("Servidor corriendo en puerto", PORT);
 });
